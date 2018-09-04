@@ -20,7 +20,7 @@ OpenMAFF runs on Windows only.
 ## Installation and usage
 
 1.  Download [the latest release on GitHub](https://github.com/ChrisBertrandDotNet/OpenMAFF/releases).  
-    The archive file name is `OpenMAFF _x.x_.zip`
+    The archive file name is `OpenMAFF.x.y.zip`
 2.  Extract it in a directory.  
     Suggestion: `C:\Users\_<user name>_\AppData\Local\Programs`
 3.  Associate the MAFF file type to OpenMAFF.
