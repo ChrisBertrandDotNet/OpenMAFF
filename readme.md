@@ -51,3 +51,9 @@ Then there are two options:
 *   If there are several tabs/html in the MAFF, OpenMAFF finds what application is your Web browser then runs it writing all the `index.html` files as parameters on the command line.  
     The resulting command line is similar to that:  
     ``FireFox.exe "c:\...\xxx\index.html" "c:\...\yyy\index.html" "c:\...\zzz\index.html"` ``
+
+## Multi-tabs on Microsoft Edge
+
+As september 2018, Edge does not seem to be able to open several files at once.
+Consequently, when you open a multi-tabs MAFF file, only the first tab is displayed by Edge.
+A workaround is to associate the HTML file type with another Web browser (I suggest FireFox).
