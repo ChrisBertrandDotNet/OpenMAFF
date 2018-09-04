@@ -54,6 +54,6 @@ Then there are two options:
 
 ## Multi-tabs on Microsoft Edge
 
-As september 2018, Edge does not seem to be able to open several files at once.
+As of september 2018, Edge does not seem to be able to open several files at once.
 Consequently, when you open a multi-tabs MAFF file, only the first tab is displayed by Edge.
 A workaround is to associate the HTML file type with another Web browser (I suggest FireFox).
