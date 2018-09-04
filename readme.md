@@ -1,0 +1,1 @@
+# OpenMAFF lets you open MAFF (Mozilla Archive Format) files that have been saved with FireFox
