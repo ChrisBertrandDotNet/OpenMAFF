@@ -23,7 +23,7 @@ OpenMAFF runs on Windows only.
     The archive file name is `OpenMAFF.x.y.zip`
 2.  Extract it in a directory.  
     Suggestion: `C:\Users\_<user name>_\AppData\Local\Programs`
-3.  Associate the MAFF file type to OpenMAFF.
+3.  Associate the MAFF file type with OpenMAFF.
     1.  In the File Explorer, right-click on any MAFF file.
     2.  Choose menu "Properties".
     3.  In the panel, in the section "Opens with:", click on the button "Change".
@@ -32,6 +32,8 @@ OpenMAFF runs on Windows only.
     6.  Select `OpenMAFF.exe`, in the directory you extracted it to.
 4.  Open the MAFF file.  
     That should silently run OpenMAFF which in turn will run your Web browser.
+
+If no Web browser is associated with the HTML file type, Windows may let you choose one.
 
 ## How does it work ?
 
@@ -49,5 +51,3 @@ Then there are two options:
 *   If there are several tabs/html in the MAFF, OpenMAFF finds what application is your Web browser then runs it writing all the `index.html` files as parameters on the command line.  
     The resulting command line is similar to that:  
     ``FireFox.exe "c:\...\xxx\index.html" "c:\...\yyy\index.html" "c:\...\zzz\index.html"` ``
-
-If no Web browser is associated to the HTML file type, Windows may let you choose one.
