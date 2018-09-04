@@ -48,6 +48,6 @@ Then there are two options:
     
 *   If there are several tabs/html in the MAFF, OpenMAFF finds what application is your Web browser then runs it writing all the `index.html` files as parameters on the command line.  
     The resulting command line is similar to that:  
-    ``FireFox.exe "c:\...\xxx\index.html`"` `"`c:\...\yyy\index.html`"` `"`c:\...\zzz\index.html`"` ``
+    ``FireFox.exe "c:\...\xxx\index.html" "c:\...\yyy\index.html" "c:\...\zzz\index.html"` ``
 
 If no Web browser is associated to the HTML file type, Windows may let you choose one.
