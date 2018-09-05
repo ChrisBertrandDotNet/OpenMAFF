@@ -70,8 +70,11 @@ namespace OpenMAFF
 
 				{
 					const string nomIndexHTML = "index.html";
+					const string nomIndexHTM = "index.htm";
 
 					var f = répertoire.GetFiles(nomIndexHTML);
+					if (f.Length == 0)
+						f = répertoire.GetFiles(nomIndexHTM);
 					if (f.Length > 0)
 						ret = OuvreHTMLAvecNavigateur("\"" + f[0].FullName + "\"");
 					else
@@ -82,6 +85,8 @@ namespace OpenMAFF
 						foreach (var sousRép in sousRéps)
 						{
 							var f2 = sousRép.GetFiles(nomIndexHTML);
+							if (f2.Length == 0)
+								f2 = sousRép.GetFiles(nomIndexHTM);
 							if (f2.Length > 0)
 							{
 								if (sb.Length > 0)
