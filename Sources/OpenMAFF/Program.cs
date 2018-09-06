@@ -22,8 +22,10 @@ namespace OpenMAFF
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 
-			// On ne montre pas de fenêtre:
-			//Application.Run(new Form1());
+			// On ne montre pas de fenêtre pour le moment:
+#if false
+			Application.Run(new Form1());
+#endif
 
 			string messageErreur = null;
 			string fichier = null;

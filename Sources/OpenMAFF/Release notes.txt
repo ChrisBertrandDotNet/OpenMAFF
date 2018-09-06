@@ -1,0 +1,12 @@
+﻿
+Version 1.2
+2018-09-06
+. Improved: better icon.
+. Added: Release notes.txt (as an embedded resource)
+
+Version 1.1
+2018-09-05
+. Fixed: Can open index.html now.
+
+Version 1.0
+2018-09-04
