@@ -35,7 +35,7 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>OpenMAFF 64x64.ico</ApplicationIcon>
+    <ApplicationIcon>OpenMAFF.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -86,8 +86,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="OpenMAFF 64x64.ico" />
     <EmbeddedResource Include="Release notes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OpenMAFF.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
