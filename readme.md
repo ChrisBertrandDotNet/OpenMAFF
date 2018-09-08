@@ -1,6 +1,10 @@
 # OpenMAFF lets you open MAFF (Mozilla Archive Format) files that have been saved with FireFox
 
+<<<<<<< HEAD
 ![](https://raw.githubusercontent.com/ChrisBertrandDotNet/OpenMAFF/master/Sources/OpenMAFF/OpenMAFF.ico)
+=======
+![](https://raw.githubusercontent.com/ChrisBertrandDotNet/OpenMAFF/master/Sources/OpenMAFF/OpenMAFF%2064x64.ico)
+>>>>>>> cd105fe997c73ec28630d2b0aacb6cf8a9bcce7d
 
 ## The MAFF format
 
