@@ -59,3 +59,29 @@ Then there are two options:
 As of september 2018, Edge does not seem to be able to open several files at once.
 Consequently, when you open a multi-tabs MAFF file, only the first tab is displayed by Edge.
 A workaround is to associate the HTML file type with another Web browser (I suggest FireFox).
+
+## Release notes
+
+Version 1.4
+2018-10-28
+- Added: A "Settings.ini" file in the executable directory.
+- Added: Automatically removes old temporary "Maff_*" directories at application start. (older than 10 days by default).
+
+Version 1.3
+2018-09-08
+- Improved: multi-size icon.
+
+Version 1.2
+2018-09-06
+- Improved: better icon.
+- Added: Release notes.txt (as an embedded resource)
+
+Version 1.1
+2018-09-05
+- Fixed: Can open index.html now.
+
+Version 1.0
+2018-09-04
+
+
+

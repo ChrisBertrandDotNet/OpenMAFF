@@ -4,21 +4,14 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace OpenMAFF
 {
-	public partial class Form1 : Form
+	internal class VersionApp
 	{
-		public Form1()
-		{
-			InitializeComponent();
-		}
+		internal const string VersionApplication = "1.4.0.0";
 	}
 }

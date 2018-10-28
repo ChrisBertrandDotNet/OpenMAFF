@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("OpenMAFF")]
 [assembly: AssemblyDescription("OpenMAFF opens archived web documents saved as MAFF format.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Christophe Bertrand (chrisbertrand.net)")]
+[assembly: AssemblyCompany("Christophe Bertrand (chrisbertrand.net) (https://github.com/ChrisBertrandDotNet)")]
 [assembly: AssemblyProduct("OpenMAFF")]
 [assembly: AssemblyCopyright("Copyright © Christophe Bertrand (chrisbertrand.net)")]
 [assembly: AssemblyTrademark("")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // Vous pouvez spécifier toutes les valeurs ou indiquer les numéros de build et de révision par défaut 
 // en utilisant '*', comme indiqué ci-dessous :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.3.0.0")]
-[assembly: AssemblyFileVersion("1.3.0.0")]
+[assembly: AssemblyVersion(OpenMAFF.VersionApp.VersionApplication)]
+[assembly: AssemblyFileVersion(OpenMAFF.VersionApp.VersionApplication)]

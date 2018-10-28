@@ -1,4 +1,8 @@
-﻿#if false
+﻿// Copyright Christophe Bertrand
+// https://chrisbertrand.net
+// https://github.com/ChrisBertrandDotNet
+
+#if false
 #define EFFACE_FICHIERS_TEMPORAIRES // Pose des problèmes de timing avec certains navigateurs Web.
 #endif
 
@@ -22,35 +26,24 @@ namespace OpenMAFF
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 
-			// On ne montre pas de fenêtre pour le moment:
-#if false
-			Application.Run(new Form1());
-#endif
-
-			string messageErreur = null;
-			string fichier = null;
+			Maintenance.RemoveOldTemporaryFiles();
 
 			if (args.Length == 0)
-				messageErreur = "The first parameter must be a MAFF file name.";
-			else
 			{
-				fichier = args[0];
-				if (!File.Exists(fichier))
-				{
-					messageErreur = "This file does not exist: " + fichier + "\n";
-					if (!fichier.StartsWith("\""))
-						messageErreur += "Did you forget to add quotation marks (\") ?";
-				}
-			}
-
-			if (messageErreur != null)
-			{
+#if false
+				// IUG:
+				Application.Run(new Form1());
+				return 0;
+#else
+				var messageErreur = "The first parameter must be a MAFF file name.";
 				AfficheErreur(messageErreur);
 				Environment.ExitCode = 1;
 				return 1;
+#endif
 			}
 
-			return OuvreFichierMAFF(fichier);
+			// ouverture du fichier passé en paramètre:
+			return OuvreFichierMAFF(args[0]);
 		}
 
 		static void AfficheErreur(string messageErreur)
@@ -59,6 +52,24 @@ namespace OpenMAFF
 		}
 
 		static int OuvreFichierMAFF(string fichierMAFF)
+		{
+			string messageErreur = null;
+			if (!File.Exists(fichierMAFF))
+			{
+				messageErreur = "This file does not exist: " + fichierMAFF + "\n";
+				if (!fichierMAFF.StartsWith("\""))
+					messageErreur += "Did you forget to add quotation marks (\") ?";
+			}
+			if (messageErreur != null)
+			{
+				AfficheErreur(messageErreur);
+				Environment.ExitCode = 1;
+				return 1;
+			}
+			return OuvreFichierMAFF2(fichierMAFF);
+		}
+
+		static int OuvreFichierMAFF2(string fichierMAFF)
 		{
 			DirectoryInfo répertoire = null;
 			int ret = 0;
@@ -128,11 +139,11 @@ namespace OpenMAFF
 		{
 			try
 			{
-				var temp = System.IO.Path.GetTempPath();
+				var temp = Settings.CommonSettings.Value.TemporaryFilesDirectory; //System.IO.Path.GetTempPath();
 				if (!string.IsNullOrEmpty(temp) && Directory.Exists(temp))
 				{
 					var répertoire = Path.Combine(temp,
-						"Maff_" +
+						Common.TempDirectoriesPrefix +// "Maff_" +
 							Guid.NewGuid().ToString()); // Le guid évite les collisions (sauf si pas de chance).
 					var di = Directory.CreateDirectory(répertoire);
 
