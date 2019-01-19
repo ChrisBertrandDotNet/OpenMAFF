@@ -1,4 +1,5 @@
-﻿// Copyright Christophe Bertrand
+﻿
+// Copyright (c) Christophe Bertrand. All Rights Reserved.
 // https://chrisbertrand.net
 // https://github.com/ChrisBertrandDotNet
 
