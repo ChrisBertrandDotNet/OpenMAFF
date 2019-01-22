@@ -22,9 +22,8 @@ OpenMAFF runs on Windows only.
 
 ## Installation and usage
 
-1.  Open this page: [latest release on GitHub](https://github.com/ChrisBertrandDotNet/OpenMAFF/releases/latest).
-2.  The archive file name is `OpenMAFF.exe`  
-    Download it to a directory.  
+1.  Open this page: [latest release](https://github.com/ChrisBertrandDotNet/OpenMAFF/releases/latest).
+2.  Download `OpenMAFF.exe` to a directory.  
     Suggestion: `C:\Users\_<user name>_\AppData\Local\Programs`
 3.  Associate the MAFF file type with OpenMAFF.
     1.  In the File Explorer, right-click on any MAFF file.
@@ -32,7 +31,7 @@ OpenMAFF runs on Windows only.
     3.  In the panel, in the section "Opens with:", click on the button "Change".
     4.  Scroll down then click on "More apps ?".
     5.  Scroll down then click on "Look for another app on this PC".
-    6.  Select `OpenMAFF.exe`, in the directory you extracted it to.
+    6.  Select `OpenMAFF.exe`, in the directory you downloaded it to.
 4.  Open the MAFF file.  
     That should silently run OpenMAFF which in turn will run your Web browser.
 
