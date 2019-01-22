@@ -1,7 +1,10 @@
 ﻿
 Version 1.5
-2019-01-xx
-- 
+2019-01-22
+- New: A banner at the top of the web page lets you open the original page on its website.
+- (programming)
+  - Changed: source code is now  translated in English (from French).
+  - Changed: the file "CB.Files.INI.cs" is now imported from the open source library "CB Helpers" (https://github.com/ChrisBertrandDotNet/CB-Helpers).
 
 Version 1.4
 2018-10-28

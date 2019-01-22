@@ -1,7 +1,7 @@
 ﻿
 // Copyright (c) Christophe Bertrand. All Rights Reserved.
 // https://chrisbertrand.net
-// https://github.com/ChrisBertrandDotNet
+// https://github.com/ChrisBertrandDotNet/OpenMAFF
 
 using CB.Files;
 using System;

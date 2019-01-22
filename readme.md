@@ -6,12 +6,13 @@
 
 MAFF (Mozilla Archive Format File) is a file format produced by several FireFox addons:
 
-*   [Maf](http://maf.mozdev.org/), the original, now abandoned.
+- [Web ScrapBook](https://addons.mozilla.org/en-US/firefox/addon/web-scrapbook/).
     
-*   [Web ScrapBook](https://addons.mozilla.org/en-US/firefox/addon/web-scrapbook/).
+- [Maf](http://maf.mozdev.org/), the original, now abandoned.
     
 
-The problem is new versions of FireFox do not allow addons to open these files.
+Recent versions of FireFox do not allow addons to open these files.
+That is why OpenMAFF has been made.
 
 ## OpenMAFF
 
@@ -61,6 +62,13 @@ Consequently, when you open a multi-tabs MAFF file, only the first tab is displa
 A workaround is to associate the HTML file type with another Web browser (I suggest FireFox).
 
 ## Release notes
+
+Version 1.5
+2019-01-22
+- New: A banner at the top of the web page lets you open the original page on its website.
+- (programming)
+  - Changed: source code is now  translated in English (from French).
+  - Changed: the file "CB.Files.INI.cs" is now imported from the open source library "CB Helpers" (https://github.com/ChrisBertrandDotNet/CB-Helpers).
 
 Version 1.4
 2018-10-28
